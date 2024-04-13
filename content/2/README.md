@@ -4,7 +4,7 @@ A web application requires a specific version of Redis to be used as a cache. Th
 
 - The pod must run in the **web** namespace.
 - The name of the pod should be **cache**.
-- Use the **Ifccncf/redis** image with the **3.2** tag.
+- Use the **redis** image with the **6-alpine** tag.
 - Expose port **6379**.
 
 ## Task:
@@ -20,7 +20,7 @@ Follow the steps below to complete the task:
 
 ### Step 1: Create Redis Pod
 ```bash
-kubectl run cache --image=Ifccncf/redis:3.2 --port=6379 --namespace=web
+kubectl run cache --image=redis:6-alpine --port=6379 --namespace=web
 
 ### Step 2: Verify the Pod
 ```bash
