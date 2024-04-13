@@ -17,7 +17,7 @@ To expose the `frontend` deployment with a NodePort service on port 30004, you c
 
 1. Create a NodePort service to expose the `frontend` deployment on port 30004:
    ```bash
-   kubectl expose deployment frontend --type=NodePort --port=8080 --target-port=8080 --namespace=kcd --name=frontend-service --node-port=30004
+   kubectl expose deployment frontend --type=NodePort --port=8080 --namespace=kcd --name=frontend-service
    ```
 
 This command creates a NodePort service named `frontend-service` in the `kcd` namespace, exposing the `frontend` deployment on port 30004. The service forwards traffic to the pods on port 8080, where the Nginx application is running.
@@ -25,5 +25,3 @@ This command creates a NodePort service named `frontend-service` in the `kcd` na
 This approach allows you to expose the `frontend` deployment with a NodePort service on port 30004 for external access.
 
 </details>
-
-Feel free to use this question and answer in your documentation. Let me know if you need further assistance!
