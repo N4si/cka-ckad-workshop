@@ -18,9 +18,3 @@ KCD workshop on CKA &amp; CKAD
 [Practice Question 7](content/7/)
 
 [Practice Question 8](content/8/)
-
-[Practice Question 9](content/9/)
-
-[Practice Question 10](content/10/)
-
-[Practice Question 11](content/11/)
